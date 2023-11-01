@@ -2,6 +2,7 @@ import React from 'react';
 import './home.css';
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function MyCards({ brand, amount, image }){
 
@@ -23,7 +24,7 @@ function MyCards({ brand, amount, image }){
                 <img className='cardimage' src={image} />
 
                 {isHovered && <div className='text-center showme'>
-                    <button className='btn stackbutton'>Connect</button>
+                    <Link to={'/wallets'} className='btn stackbutton'>Connect</Link>
                     <p className='stacklearn font-weight-bold'>Learn More</p>
 
                 </div>

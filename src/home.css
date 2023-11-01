@@ -434,7 +434,15 @@
     text-decoration: none;
     text-align: left;
     font-size: 14px;
+  
 }
+
+.footlist a{
+
+    text-decoration: none;
+    color:whitesmoke;
+}
+
 .footerfooter{
     display: flex;
     flex-direction: row;
@@ -490,6 +498,13 @@
    
 }
 
+.blogdiv a{
+    text-decoration: none;
+}
+
+.blogdiv a h4{
+    color: black;
+}
 
 #collapseExampleFour{
     background-color: white;

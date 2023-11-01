@@ -123,7 +123,7 @@ function Home(){
 
 
       <li className="nav-item mylink">
-        <a className="nav-link" href="#">Analytics</a>
+        <a className="nav-link" href="https://dune.com/stader_labs/dashboard-catalogue">Analytics</a>
       </li>
 
 
@@ -154,10 +154,10 @@ function Home(){
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <div className='flexdiv'>
-          <img className='topicon' src={twitter} />
-          <img className='topicon' src={discord} />
-          <img className='topicon' src={telegram} />
-          <img className='topicon' src={reddit} />
+          <a href="https://twitter.com/staderlabs"><img className='topicon' src={twitter} /></a>
+         <a href='https://discord.com/invite/xJURAhSmav'><img className='topicon' src={discord} /></a>
+          <a  href='https://t.me/staderlabs'><img className='topicon' src={telegram} /></a>
+         <a href='https://www.reddit.com/r/StaderLabs_Official/'> <img className='topicon' src={reddit} /></a>
 
       </div>
       <Link to={'/wallets'} class="btn mybtn my-2 my-sm-0" type="submit">Connect Wallet</Link>
@@ -243,12 +243,12 @@ function Home(){
 
            
 
-<MyCardThree brand="Commuity Forum"  image={community} />
-<MyCardThree brand="Snapshot"image={snapshot} />
+<MyCardThree brand="Commuity Forum"url="https://forum.staderlabs.com/"  image={community} />
+<MyCardThree brand="Snapshot"url="https://snapshot.org/#/staderdao.eth" image={snapshot} />
 
-<MyCardThree brand="SD DeFi"  image={sd} />
+<MyCardThree brand="SD DeFi"url="https://www.staderlabs.com/sd/defi/"  image={sd} />
 
-<MyCardThree brand="SD Details"  image={sdtwo} />
+<MyCardThree brand="SD Details"url="https://staderlabs.notion.site/staderlabs/Introducing-SD-1160c9a4217d477eaafb963e21f90aba"  image={sdtwo} />
 
 </div>
        
@@ -287,12 +287,12 @@ function Home(){
 <div style={{
     visibility:"hidden",
 }}>
-<MyCardThree brand="Docs"  image={doc} />
+<MyCardThree brand="Docs"url=""  image={doc} />
 </div>
-<MyCardThree brand="Github"  image={github} />
-<MyCardThree brand="ETHx Litepaper"image={eth} />
+<MyCardThree brand="Github" url="" image={github} />
+<MyCardThree brand="ETHx Litepaper"url="https://www.staderlabs.com/docs/ETHx%20Litepaper.pdf" image={eth} />
 
-<MyCardThree brand="Docs"  image={doc} />
+<MyCardThree brand="Docs"url="https://www.staderlabs.com/docs/"  image={doc} />
 
 
 </div>
@@ -334,10 +334,10 @@ function Home(){
 }}>
 <MyCardThree brand=""  image={doc} />
 </div>
-<MyCardThree brand="About Stader"  image={stadericon} />
-<MyCardThree brand="Blogs"image={blog} />
+<MyCardThree brand="About Stader"url="https://www.staderlabs.com/about-stader/"  image={stadericon} />
+<MyCardThree brand="Blogs"url="https://www.staderlabs.com/blogs/" image={blog} />
 
-<MyCardThree brand="Download Press Kit"  image={download} />
+<MyCardThree brand="Download Press Kit"url="https://www.staderlabs.com/Stader_press_kit.zip"  image={download} />
 
 
 </div>
@@ -403,7 +403,7 @@ function Home(){
             {/* connect button */}
 
             <div className='text-left mt-4'>
-            <button class="btn mybtntwo " type="submit">Connect Wallet</button>
+            <Link to={'/wallets'} class="btn mybtntwo " type="submit">Connect Wallet</Link>
 
             </div>
         </div>
@@ -496,7 +496,7 @@ function Home(){
         <p className='heropara text-center'>Audited and secured by leading blockchain experts to ensure the safety of your assets</p>
         <div className='text-center mt-2 py-4'>
 
-            <button className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnect'>Connect Wallet</button>
+            <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnect'>Connect Wallet</Link>
 
          
 
@@ -605,7 +605,7 @@ function Home(){
 
           <div className='col coincontent'>
           <div className='spancontent'>
-             <button className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnecttwo'>Connect Wallet</button>
+             <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnecttwo'>Connect Wallet</Link>
 
 
               </div>
@@ -831,27 +831,30 @@ function Home(){
         <div className='blogmain mt-4'>
 
             <div className='blogdiv'>
+                <a href='https://www.staderlabs.com/blogs/staking-basics/what-is-eth-solo-staking/'>
                 <img  className='blogimage' src={blogone} />
                 <h4 className='coinhead text-center'>What is Eth Solo Staking?</h4>
 
                 <p className='heroparatwo text-center'>3 mins read / updated on Thu Oct 19 2023</p>
-
+                </a>
             </div>
 
             <div className='blogdiv'>
+                <a href='https://www.staderlabs.com/blogs/understanding-rseth-tech-explainer/'>
             <img  className='blogimage' src={blogtwo} />
                 <h4 className='coinhead text-center'>Understanding rsETH | Tech Explainer</h4>
 
                 <p className='heroparatwo text-center'>2 mins read / updated on Mon Sep 11 2023</p>
-
+                </a>
             </div>
 
             <div className='blogdiv'>
+                <a href='https://www.staderlabs.com/blogs/staking-basics/ethx-vs-solo-staking/'>
             <img  className='blogimage' src={blogthree} />
                 <h4 className='coinhead text-center'>ETHx vs. Solo Staking: Which is better?</h4>
 
                 <p className='heroparatwo text-center'>3 mins read / updated on Mon Oct 30 2023</p>
-
+                </a>
             </div>
 
 
@@ -947,12 +950,12 @@ Liquid staking offers the dual benefit of better rewards through staking and the
             <img className='footerlogo mb-3' src={footlogo} />
 
             <div className='flexdiv'>
-                <img className='topicon' src={twitter} />
-                <img className='topicon' src={discord} />
-                <img className='topicon' src={telegram} />
-                <img className='topicon' src={reddit} />
+          <a href="https://twitter.com/staderlabs"><img className='topicon' src={twitter} /></a>
+         <a href='https://discord.com/invite/xJURAhSmav'><img className='topicon' src={discord} /></a>
+          <a  href='https://t.me/staderlabs'><img className='topicon' src={telegram} /></a>
+         <a href='https://www.reddit.com/r/StaderLabs_Official/'> <img className='topicon' src={reddit} /></a>
 
-             </div>
+      </div>
 
              
 
@@ -982,10 +985,10 @@ Liquid staking offers the dual benefit of better rewards through staking and the
 
 
            
-                    <p className='footlist'>Community Forum</p>
-                    <p className='footlist'>Snapshot</p>
-                    <p className='footlist'>SD DeFi</p>
-                    <p className='footlist'>SD Details</p>
+                    <p className='footlist'><a href='https://forum.staderlabs.com'>Community Forum</a></p>
+                    <p className='footlist'><a href='https://snapshot.org/#/staderdao.eth'>Snapshot</a></p>
+                    <p className='footlist'><a href='https://www.staderlabs.com/sd/defi/'>SD DeFi</a></p>
+                    <p className='footlist'><a href='https://staderlabs.notion.site/staderlabs/Introducing-SD-1160c9a4217d477eaafb963e21f90aba'>SD Details</a></p>
                     
             </div>
 
@@ -996,7 +999,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
 
 
            
-                    <p className='footlist'>Dune Analytics</p>
+                    <p className='footlist'><a href='https://dune.com/stader_labs/dashboard-catalogue'>Dune Analytics</a></p>
                    
             </div>
 
@@ -1008,9 +1011,9 @@ Liquid staking offers the dual benefit of better rewards through staking and the
                 <h3 className='linkhead mb-4'>Developers</h3>
 
            
-                    <p className='footlist'>Github</p>
-                    <p className='footlist'>ETHx Litepaper</p>
-                    <p className='footlist'>Docs</p>
+                    <p className='footlist'><a href=''>Github</a></p>
+                    <p className='footlist'><a href='https://www.staderlabs.com/docs/ETHx%20Litepaper.pdf'>ETHx Litepaper</a></p>
+                    <p className='footlist'><a href='https://www.staderlabs.com/docs/'>Docs</a></p>
                     
 
 
@@ -1021,9 +1024,9 @@ Liquid staking offers the dual benefit of better rewards through staking and the
 
 
            
-                    <p className='footlist'>About Stader</p>
-                    <p className='footlist'>Blog</p>
-                    <p className='footlist'>Download Press Kit</p>
+                    <p className='footlist'><a href='https://www.staderlabs.com/about-stader/'>About Stader</a></p>
+                    <p className='footlist'><a href='https://www.staderlabs.com/blogs/'>Blog</a></p>
+                    <p className='footlist'><a href='https://www.staderlabs.com/Stader_press_kit.zip'>Download Press Kit</a></p>
                 
                     
             </div>
