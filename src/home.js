@@ -69,7 +69,7 @@ import blog from './blogs.svg';
 import download from './download.svg';
 import stadericon from './stadertwo.svg';
 import { Link } from 'react-router-dom';
-
+import MyCardFive from './cardfive';
 
 function Home(){
 
@@ -88,7 +88,7 @@ function Home(){
         <>
             {/* nav */}
 
-            <nav class="navbar fixed-top navbar-expand-lg py-4 mynav navbar-light">
+            <nav class="navbar fixed-top navbar-expand-lg mynav navbar-light">
   <a class="navbar-brand" href="#"><img className='logoimage' src={logo} /><span className='logohead'>Stader</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -419,7 +419,7 @@ function Home(){
         <p className='heropara text-center'>Choose your favourite network and start earning rewards</p>
 
 
-
+    <div className='hidemobile'>
         <div className='carddiv container mt-5'>
 
            
@@ -454,6 +454,19 @@ function Home(){
             
 
         </div>
+
+    </div>
+
+       {/* mycardfive here */}
+       <MyCardFive brand="Ethereum" amount="$72,852,841 staked"url="https://www.staderlabs.com/eth"image={ethereum} />
+
+       <MyCardFive brand="Polygon" amount="$66,987,348 staked"url="https://www.staderlabs.com/polygon" image={polygon} />
+
+       <MyCardFive brand="Hedera" amount="$21,094,092 staked"url=""image={hedera} />
+       <MyCardFive brand="BNB" amount="$13,501,724 staked"url="https://www.staderlabs.com/bnb"image={binance} />
+       <MyCardFive brand="Fantom" amount="$2,439,297 staked"url=""image={fantom} />
+       <MyCardFive brand="Near" amount="$847,342 staked"url=""image={near} />
+       <MyCardFive brand="Terra 2.0" amount="$512,710 staked"url=""image={terra} />
     </section>
 
 
@@ -538,7 +551,7 @@ function Home(){
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
       <div className='row px-5 mt-5'>
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent '>
               <div className='spancontent'>
                   <img className='coinimage' src={pantera} />
 
@@ -550,7 +563,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={coinbase} />
 
@@ -562,7 +575,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={jump} />
 
@@ -579,7 +592,7 @@ function Home(){
       </div>
 
       <div className='row px-5 mt-5'>
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
               <div className='spancontent'>
                   <img className='coinimage' src={block} />
 
@@ -591,7 +604,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={coinbase} />
 
@@ -603,7 +616,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
           <div className='spancontent'>
              <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnecttwo'>Connect Wallet</Link>
 
@@ -619,7 +632,7 @@ function Home(){
   </div>
   <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
   <div className='row px-5 mt-5'>
-          <div className='col coincontent'>
+          <div className='col-md-3 coincontent'>
               <div className='spancontent'>
                   <img className='coinimage' src={ledger} />
 
@@ -631,7 +644,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-3 coincontent'>
               <div className='spancontent'>
                   <img className='coinimage' src={aave} />
 
@@ -643,7 +656,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-3 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={balancer} />
 
@@ -655,7 +668,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-3 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={beef} />
 
@@ -672,7 +685,7 @@ function Home(){
 </div>
 
 <div className='row px-5 mt-5'>
-          <div className='col coincontent'>
+          <div className='col-md-3 coincontent'>
               <div className='spancontent'>
                   <img className='coinimage' src={swissborg} />
 
@@ -684,7 +697,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-3 coincontent'>
               <div className='spancontent'>
                   <img className='coinimage' src={quick} />
 
@@ -696,7 +709,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-3 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={anchorage} />
 
@@ -708,7 +721,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-3 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={bitgo} />
 
@@ -732,7 +745,7 @@ function Home(){
 
   <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
   <div className='row px-5 mt-5'>
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
               <div className='spancontent'>
                   <img className='coinimage' src={okx} />
 
@@ -744,7 +757,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={gate} />
 
@@ -756,7 +769,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={huobi} />
 
@@ -773,7 +786,7 @@ function Home(){
       </div>
 
       <div className='row px-5 mt-5'>
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
               <div className='spancontent'>
                   <img className='coinimage' src={bybit} />
 
@@ -785,7 +798,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={kucoin} />
 
@@ -797,7 +810,7 @@ function Home(){
 
           </div>
 
-          <div className='col coincontent'>
+          <div className='col-md-4 coincontent'>
           <div className='spancontent'>
                   <img className='coinimage' src={crypto} />
 
@@ -874,7 +887,7 @@ function Home(){
 
 
 
-    <section className='blog mt-3'>
+    <section className='faq mt-3'>
 
         <h2 className='supportheading '>Frequently asked questions</h2>
 
@@ -944,12 +957,12 @@ Liquid staking offers the dual benefit of better rewards through staking and the
 
         <div className='row'>
 
-        <div className='col-md-4'>
+        <div className='col-md-4 col-sm-12'>
           
 
             <img className='footerlogo mb-3' src={footlogo} />
 
-            <div className='flexdiv'>
+            <div className='flexdiv my-3'>
           <a href="https://twitter.com/staderlabs"><img className='topicon' src={twitter} /></a>
          <a href='https://discord.com/invite/xJURAhSmav'><img className='topicon' src={discord} /></a>
           <a  href='https://t.me/staderlabs'><img className='topicon' src={telegram} /></a>
@@ -965,7 +978,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
 
             <div className='row'>
 
-            <div className='col linkcol text-left'>
+            <div className='col-md-4 linkcol text-left'>
                 <h3 className='linkhead mb-4'>Networks</h3>
 
            
@@ -980,7 +993,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
 
             </div>
 
-            <div className='col linkcol'>
+            <div className='col-md-4 linkcol'>
                 <h3 className='linkhead mb-4'>Governance</h3>
 
 
@@ -992,7 +1005,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
                     
             </div>
 
-            <div className='col linkcol'>
+            <div className='col-md-4 linkcol'>
                 <h3 className='linkhead mb-4'>Analytics</h3>
 
                 
@@ -1007,7 +1020,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
 
             <div className='row mt-4'>
 
-            <div className='col linkcol text-left'>
+            <div className='col-md-4 linkcol text-left'>
                 <h3 className='linkhead mb-4'>Developers</h3>
 
            
@@ -1019,7 +1032,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
 
             </div>
 
-            <div className='col linkcol'>
+            <div className='col-md-4 linkcol'>
                 <h3 className='linkhead mb-4'>About</h3>
 
 
@@ -1031,7 +1044,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
                     
             </div>
 
-            <div className='col linkcol'>
+            <div className='col-md-4 linkcol'>
                    
                    
             </div>
