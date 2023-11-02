@@ -71,6 +71,17 @@ import stadericon from './stadertwo.svg';
 import { Link } from 'react-router-dom';
 import MyCardFive from './cardfive';
 
+import hamburger from './hamburger.svg';
+import { useEffect } from 'react';
+import ethwhite from './ethereum-white.svg';
+import polygonwhite from './polygon-white.svg';
+import hederawhite from './hedera-white.svg';
+import bnbwhite from './binance-white.svg';
+import fantomwhite from './fantom-white.svg';
+import nearwhite from './near-white.svg';
+import terrawhite  from './terra-white.svg';
+
+
 function Home(){
 
 
@@ -84,11 +95,123 @@ function Home(){
     //     setIsHovered(false);
     // }
 
+    const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+    } else {
+      document.body.style.overflow = 'auto'; // Allow scrolling when menu is closed
+    }
+  }, [menuOpen]);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+
     return (
+
         <>
             {/* nav */}
 
-            <nav class="navbar fixed-top navbar-expand-lg mynav navbar-light">
+            <nav className='mobilenav py-2 px-4 fixed-top'>
+                <img onClick={toggleMenu} className='hamb' src={hamburger} />  <a class="navbar-brand" href="#"><img className='mobilelogoimage' src={logo} /><span className='logohead'>Stader</span></a>
+
+            </nav>
+
+
+           {menuOpen && ( <div className='mobile-menu hidelarge mt-3'>
+                
+               <div className='flexfirst mt-5 px-2'>
+
+                   <div className='logofirst'>
+                   <a class="navbar-brand" href="#"><img className='mobilelogoimage' src={logo} /><span className='text-light'>Stader</span></a>
+
+                   </div>
+
+                   <div className='socialfirst mt-2'>
+                        <div className='flexdiv'>
+                            <a href="https://twitter.com/staderlabs"><img className='topicontwo' src={twitter} /></a>
+                            <a href='https://discord.com/invite/xJURAhSmav'><img className='topicontwo' src={discord} /></a>
+                            <a  href='https://t.me/staderlabs'><img className='topicontwo' src={telegram} /></a>
+                            <a href='https://www.reddit.com/r/StaderLabs_Official/'> <img className='topicontwo' src={reddit} /></a>
+
+                        </div>
+
+                   </div>
+
+               </div>
+                
+
+          <ul>
+            <li className='whitelist py-2'><img className='whiteicon mr-3'src={ethwhite} />Ethereum </li>
+            <li className='whitelist py-2'><img className='whiteicon mr-3'src={polygonwhite} />Polygon </li>
+            <li className='whitelist py-2'><img className='whiteicon mr-3'src={hederawhite} />Hedera </li>
+            <li className='whitelist py-2'><img className='whiteicon mr-3'src={bnbwhite} />BNB </li>
+            <li className='whitelist py-2'><img className='whiteicon mr-3'src={fantomwhite} />Fantom </li>
+            <li className='whitelist py-2'><img className='whiteicon mr-3'src={nearwhite} />Near </li>
+            <li className='whitelist py-2'><img className='whiteicon mr-3'src={terrawhite} />Terra 2.0 </li>
+           
+          </ul>
+
+          <div class="dropdown">
+            <a class="dropdown-toggle mytoggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Governance
+            </a>
+            <div class="dropdown-menu mydrop" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item mydropitems" href="https://forum.staderlabs.com/">Commuity Forum</a>
+                <a class="dropdown-item mydropitems" href="https://snapshot.org/#/staderdao.eth">Snapshot</a>
+                <a class="dropdown-item mydropitems" href="https://www.staderlabs.com/sd/defi/">SD DeFi</a>
+                <a class="dropdown-item mydropitems" href="https://staderlabs.notion.site/staderlabs/Introducing-SD-1160c9a4217d477eaafb963e21f90aba">SD Details</a>
+            </div>
+            </div>
+
+
+            <div class="dropdown">
+            <a class=" mytoggle">
+                Analytics
+            </a>
+           
+            </div>
+
+            <div class="dropdown">
+            <a class="dropdown-toggle mytoggle"  id="dropdownMenuButtonTwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Developers
+            </a>
+            <div class="dropdown-menu mydrop" aria-labelledby="dropdownMenuButtonTwo">
+                <a class="dropdown-item mydropitems" href="https://forum.staderlabs.com/">Github</a>
+                <a class="dropdown-item mydropitems" href="https://www.staderlabs.com/docs/ETHx%20Litepaper.pdf">ETHx Litepaper</a>
+                <a class="dropdown-item mydropitems" href="https://www.staderlabs.com/docs/">Docs</a>
+
+            </div>
+            </div>
+
+            <div class="dropdown">
+            <a class="dropdown-toggle mytoggle"  id="dropdownMenuButtonThree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+            </a>
+            <div class="dropdown-menu mydrop" aria-labelledby="dropdownMenuButtonThree">
+                <a class="dropdown-item mydropitems" href="https://www.staderlabs.com/about-stader/">About Stader</a>
+                <a class="dropdown-item mydropitems" href="https://www.staderlabs.com/blogs/">Blogs</a>
+                <a class="dropdown-item mydropitems" href="https://www.staderlabs.com/Stader_press_kit.zip">Download Press Kit</a>
+
+            </div>
+            </div>
+
+
+
+
+        </div>
+           )
+
+    }
+
+            
+
+
+
+            <nav class="navbar fixed-top navbar-expand-lg mynav navbar-light desktopnav">
   <a class="navbar-brand" href="#"><img className='logoimage' src={logo} /><span className='logohead'>Stader</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

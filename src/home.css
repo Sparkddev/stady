@@ -4,6 +4,12 @@
     background-color: white;
 }
 
+.mobilenav{
+    display: none;
+}
+.hidelarge{
+    display: none;
+}
 .logohead{
     color: #142528;
     font-size: 26px;
@@ -567,9 +573,7 @@ font-weight: 300;
 @media only screen and (max-width: 768px) {
 
     .mynav{
-       padding-left:30px;
-       padding-right: 30px;
-        background-color: red;
+       display: none;
         
     }
 
@@ -957,6 +961,84 @@ font-weight: 300;
     width: 100%;
     font-size: 13px;
 }
+
+.mobilenav{
+    display: block;
+    background-color: white;
+    
+}
+
+.mobilelogoimage{
+    width:30px;
+}
+
+.hidelarge{
+    display: block;
+}
+
+
+    .mobile-menu {
+        position:fixed;
+        top: 0;
+        
+        width:60%;
+        min-height: 100vh;
+        background-color: #142528;;
+        z-index: 3;
+        transition: transform 0.8s ease; /* Transition for smooth entrance */
+      }
+      
+      .flexfirst{
+          display: flex;
+          flex-direction: row;
+            justify-content: space-between;
+      }
+
+      .topicontwo{
+        margin-left:10px;
+        width: 25px;
+    }
+    
+    .topicontwo:hover{
+        border: 0.5px solid #07A658;
+        border-radius: 100%;
+    }
+
+    .whitelist{
+        color:whitesmoke;
+        font-size:12px;
+        list-style: none;
+    }
+
+   .mytoggle{
+       display: block;
+       color:white;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       font-weight: 300;
+       color: whitesmoke;
+       text-decoration: none;
+       border-top: 0.6px solid white;
+       
+       width: 100%;
+       padding-left: 40px;
+       
+   }
+   .mytoggle:hover{
+       text-decoration: none;
+       color:white;
+   }
+
+   .mydrop{
+    background-color: #142528;
+    z-index: 3;
+    color:white;
+   }
+
+   .mydropitems{
+       color:white;
+       font-size:12px;
+   }
 
 
 }
