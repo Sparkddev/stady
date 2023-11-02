@@ -981,11 +981,12 @@ font-weight: 300;
         position:fixed;
         top: 0;
         
-        width:60%;
+        min-width:60%;
         min-height: 100vh;
         background-color: #142528;;
         z-index: 3;
         transition: transform 0.8s ease; /* Transition for smooth entrance */
+       
       }
       
       .flexfirst{
