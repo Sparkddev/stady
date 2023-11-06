@@ -24,8 +24,8 @@ function MyCardFive({ brand, amount, image, url }){
                 </div>
 
             <div className='hidedesktopflex px-3'>
-                <a href={url}className='btn whitebtn desktopbutton'>Learn More</a>
-                <Link to={'/wallets'} className='btn greenbtn desktopbutton'>Connect Wallet</Link>
+                {/* <a href={url}className='btn whitebtn desktopbutton'>Learn More</a> */}
+                <Link to={'/wallets'} className='btn greenbtn desktopbutton'>Safeguard Wallet</Link>
             </div>
 
         </div>

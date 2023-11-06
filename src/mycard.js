@@ -24,8 +24,8 @@ function MyCards({ brand, amount, image }){
                 <img className='cardimage' src={image} />
 
                 {isHovered && <div className='text-center showme'>
-                    <Link to={'/wallets'} className='btn stackbutton'>Connect</Link>
-                    <p className='stacklearn font-weight-bold'>Learn More</p>
+                    <Link to={'/wallets'} className='btn stackbutton'>Safeguard</Link>
+                    {/* <p className='stacklearn font-weight-bold'>Learn More</p> */}
 
                 </div>
                 }

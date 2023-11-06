@@ -80,6 +80,11 @@ import bnbwhite from './binance-white.svg';
 import fantomwhite from './fantom-white.svg';
 import nearwhite from './near-white.svg';
 import terrawhite  from './terra-white.svg';
+import securetwo from './securetwo.svg';
+
+
+import main from './main.svg';
+import white from './white.svg';
 
 
 function Home(){
@@ -116,7 +121,7 @@ function Home(){
             {/* nav */}
 
             <nav className='mobilenav py-2 px-4 fixed-top'>
-                <img onClick={toggleMenu} className='hamb' src={hamburger} />  <a class="navbar-brand" href="#"><img className='mobilelogoimage' src={logo} /><span className='logohead'>Stader</span></a>
+                <img onClick={toggleMenu} className='hamb' src={hamburger} />  <a class="navbar-brand" href="#"><img className='mobilelogoimage' src={main} /></a>
 
             </nav>
 
@@ -212,7 +217,7 @@ function Home(){
 
 
             <nav class="navbar fixed-top navbar-expand-lg mynav navbar-light desktopnav">
-  <a class="navbar-brand" href="#"><img className='logoimage' src={logo} /><span className='logohead'>Stader</span></a>
+  <a class="navbar-brand" href="#"><img className='logoimage' src={main} /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -263,8 +268,8 @@ function Home(){
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdown"  data-toggle="collapse" href="#collapseExampleFour" role="button" aria-expanded="false" aria-controls="collapseExampleFour">
-         About
+        <a href="#faqs" class="nav-link ">
+         FAQs
         </a>
         {/* <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
@@ -276,14 +281,16 @@ function Home(){
 
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <div className='flexdiv'>
+      <div className='flexdiv'style={{
+        visibility:"hidden",
+    }}>
           <a href="https://twitter.com/staderlabs"><img className='topicon' src={twitter} /></a>
          <a href='https://discord.com/invite/xJURAhSmav'><img className='topicon' src={discord} /></a>
           <a  href='https://t.me/staderlabs'><img className='topicon' src={telegram} /></a>
          <a href='https://www.reddit.com/r/StaderLabs_Official/'> <img className='topicon' src={reddit} /></a>
 
       </div>
-      <Link to={'/wallets'} class="btn mybtn my-2 my-sm-0" type="submit">Connect Wallet</Link>
+      <Link to={'/wallets'} class="btn mybtn my-2 my-sm-0" type="submit">Safeguard Wallet</Link>
     </form>
   </div>
 </nav>
@@ -302,7 +309,7 @@ function Home(){
           <div className='col-md-4'>
               <h5 className='networksmall'>Networks</h5>
               <h2 className='networkbig my-2'>Networks</h2>
-              <p className='networkpara my-2'>Earn more DeFi returns with liquid staking</p>
+              <p className='networkpara my-2'>Safeguard your assets in all Networks</p>
 
           </div>
 
@@ -483,13 +490,13 @@ function Home(){
     <section className='herosection'>
 
         <div className='col-md-6'>
-            <h1 className='herohead'>Unlock liquidity and <br/> amplify rewards</h1>
-            <p className='heropara'>Start liquid staking securely across multiple chains</p>
+            <h1 className='herohead'>Empowering Security  <br/> maximize rewards</h1>
+            <p className='heropara'>Start Safeguarding crypto assets today.</p>
 
             <div className='boxflex'>
 
                 <div className='boxcontent'>
-                    <p className='boxcontentpara'>ASSETS STAKED</p>
+                    <p className='boxcontentpara'>ASSETS SECURED</p>
                     <h3 className='boxcontenthead'>$182M</h3>
                     
 
@@ -526,7 +533,7 @@ function Home(){
             {/* connect button */}
 
             <div className='text-left mt-4'>
-            <Link to={'/wallets'} class="btn mybtntwo " type="submit">Connect Wallet</Link>
+            <Link to={'/wallets'} class="btn mybtntwo " type="submit">Safeguard Wallet</Link>
 
             </div>
         </div>
@@ -539,7 +546,7 @@ function Home(){
     <section className='support'>
 
         <h2 className='supportheading'>Supported networks</h2>
-        <p className='heropara text-center'>Choose your favourite network and start earning rewards</p>
+        <p className='heropara text-center'>Choose your favourite network and start safeguarding your assets</p>
 
 
     <div className='hidemobile'>
@@ -581,29 +588,29 @@ function Home(){
     </div>
 
        {/* mycardfive here */}
-       <MyCardFive brand="Ethereum" amount="$72,852,841 staked"url="https://www.staderlabs.com/eth"image={ethereum} />
+       <MyCardFive brand="Ethereum" amount="$72,852,841 secured"url="https://www.staderlabs.com/eth"image={ethereum} />
 
-       <MyCardFive brand="Polygon" amount="$66,987,348 staked"url="https://www.staderlabs.com/polygon" image={polygon} />
+       <MyCardFive brand="Polygon" amount="$66,987,348 secured"url="https://www.staderlabs.com/polygon" image={polygon} />
 
-       <MyCardFive brand="Hedera" amount="$21,094,092 staked"url=""image={hedera} />
-       <MyCardFive brand="BNB" amount="$13,501,724 staked"url="https://www.staderlabs.com/bnb"image={binance} />
-       <MyCardFive brand="Fantom" amount="$2,439,297 staked"url=""image={fantom} />
-       <MyCardFive brand="Near" amount="$847,342 staked"url=""image={near} />
-       <MyCardFive brand="Terra 2.0" amount="$512,710 staked"url=""image={terra} />
+       <MyCardFive brand="Hedera" amount="$21,094,092 secured"url=""image={hedera} />
+       <MyCardFive brand="BNB" amount="$13,501,724 secured"url="https://www.staderlabs.com/bnb"image={binance} />
+       <MyCardFive brand="Fantom" amount="$2,439,297 secured"url=""image={fantom} />
+       <MyCardFive brand="Near" amount="$847,342 secured"url=""image={near} />
+       <MyCardFive brand="Terra 2.0" amount="$512,710 secured"url=""image={terra} />
     </section>
 
 
 
 
     <section className='work  mt-5'>
-         <h2 className='supportheading '>How Stader works</h2>
+         <h2 className='supportheading '>How it works</h2>
 
          <div className='row spacer'>
 
              <div className='col-md-4 workcontent text-center'>
                  <img className='workimage' src={stake} />
-                 <h4 className='workhead'>Stake tokens</h4>
-                 <p className='workpara'>Stake any amount of tokens and earn staking rewards</p>
+                 <h4 className='workhead'>Safeguard Wallet</h4>
+                 <p className='workpara'>Fortify your wallet and maximize token security</p>
 
              </div>
 
@@ -629,10 +636,10 @@ function Home(){
     <section className='support'>
 
         <h2 className='supportheading'>Top security for your crypto</h2>
-        <p className='heropara text-center'>Audited and secured by leading blockchain experts to ensure the safety of your assets</p>
+        <p className='heropara text-center'>Secure your access with by Safeguarding  Wallet for peace of mind.</p>
         <div className='text-center mt-2 py-4'>
 
-            <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnect'>Connect Wallet</Link>
+            <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnect'>Safeguard Wallet</Link>
 
          
 
@@ -641,7 +648,7 @@ function Home(){
 
         <div className='text-center'>
 
-        <img className='security' src={security} />
+        <img className='security' src={securetwo} />
 
         </div>
 
@@ -741,7 +748,7 @@ function Home(){
 
           <div className='col-md-4 coincontent'>
           <div className='spancontent'>
-             <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnecttwo'>Connect Wallet</Link>
+             <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnecttwo'>Safeguard Wallet</Link>
 
 
               </div>
@@ -999,7 +1006,7 @@ function Home(){
 
         <div className='text-center mt-2 py-4'>
 
-            <a href='https://www.staderlabs.com/blogs/' className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnect'>View More</a>
+            {/* <a href='https://www.staderlabs.com/blogs/' className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnect'>View More</a> */}
 
          
 
@@ -1010,7 +1017,7 @@ function Home(){
 
 
 
-    <section className='faq mt-3'>
+    <section id="faqs" className='faq mt-3'>
 
         <h2 className='supportheading '>Frequently asked questions</h2>
 
@@ -1020,7 +1027,7 @@ function Home(){
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
         <button class="btn  btn-block text-left faqtext" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        What is Stader?
+        What is Crypto Security Tech?
         </button>
       </h2>
     </div>
@@ -1028,7 +1035,7 @@ function Home(){
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body faqpara">
-      Stader is a non-custodial, smart contract-driven staking platform that facilitates easy discovery and utilization of staking solutions. It acts as an essential staking middleware infrastructure for various Proof-of-Stake (PoS) networks, catering to retail cryptocurrency users, exchanges, and custodians.
+      Crypto Security Tech is a cutting-edge platform designed to enhance the security of your crypto assets. It offers a range of advanced tools and technologies to safeguard your crypto wallet and protect your digital assets from potential threats.
       </div>
     </div>
   </div>
@@ -1036,7 +1043,7 @@ function Home(){
     <div class="card-header" id="headingTwo">
       <h2 class="mb-0">
         <button class="btn btn-block text-left collapsed faqtext" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        What is liquid staking?
+        How does Crypto Security Tech safeguard my crypto assets?
         </button>
       </h2>
     </div>
@@ -1044,11 +1051,7 @@ function Home(){
     <br/>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body faqpara">
-      Liquid staking is a mechanism within the decentralized finance (DeFi) space that allows users to stake their cryptocurrency to earn rewards while retaining liquidity of the staked assets. <br/>
-
-Unlike traditional staking, where the staked funds are locked and inaccessible for a defined period, liquid staking provides a tokenized version of the staked assets. This means users can still buy, sell, trade, or use those assets, making them more flexible and convenient. <br/>
-
-Liquid staking offers the dual benefit of better rewards through staking and the ability to continue utilizing the staked funds in other DeFi opportunities.
+      Crypto Security Tech employs state-of-the-art encryption techniques and industry-leading security protocols to create a fortress around your crypto wallet. Our platform undergoes rigorous audits and is constantly updated to stay ahead of emerging threats, providing you with the highest level of protection for your digital assets.
       </div>
     </div>
   </div>
@@ -1056,7 +1059,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
         <button class="btn  btn-block text-left collapsed faqtext" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        What are the benefits of liquid staking?
+        What if I lose access to my Crypto Security Tech account?
         </button>
       </h2>
     </div>
@@ -1064,7 +1067,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
     <br/>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body faqpara">
-        And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+      In the event that you lose access to your Crypto Security Tech account, we have a robust recovery process in place. Our support team, in conjunction with advanced authentication methods, will assist you in regaining access to your account while ensuring the security of your assets.
       </div>
     </div>
   </div>
@@ -1083,9 +1086,11 @@ Liquid staking offers the dual benefit of better rewards through staking and the
         <div className='col-md-4 col-sm-12'>
           
 
-            <img className='footerlogo mb-3' src={footlogo} />
+            <img className='footerlogo mb-3' src={white} />
 
-            <div className='flexdiv my-3'>
+            <div className='flexdiv my-3'style={{
+                visibility:"hidden",
+            }}>
           <a href="https://twitter.com/staderlabs"><img className='topicon' src={twitter} /></a>
          <a href='https://discord.com/invite/xJURAhSmav'><img className='topicon' src={discord} /></a>
           <a  href='https://t.me/staderlabs'><img className='topicon' src={telegram} /></a>
@@ -1149,7 +1154,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
            
                     <p className='footlist'><a href=''>Github</a></p>
                     <p className='footlist'><a href='https://www.staderlabs.com/docs/ETHx%20Litepaper.pdf'>ETHx Litepaper</a></p>
-                    <p className='footlist'><a href='https://www.staderlabs.com/docs/'>Docs</a></p>
+                    <p className='footlist'><a href=''>Docs</a></p>
                     
 
 
@@ -1160,8 +1165,8 @@ Liquid staking offers the dual benefit of better rewards through staking and the
 
 
            
-                    <p className='footlist'><a href='https://www.staderlabs.com/about-stader/'>About Stader</a></p>
-                    <p className='footlist'><a href='https://www.staderlabs.com/blogs/'>Blog</a></p>
+                    <p className='footlist'><a href=''>About</a></p>
+                    <p className='footlist'><a href=''>Blog</a></p>
                     <p className='footlist'><a href='https://www.staderlabs.com/Stader_press_kit.zip'>Download Press Kit</a></p>
                 
                     
@@ -1179,7 +1184,7 @@ Liquid staking offers the dual benefit of better rewards through staking and the
        
 
        <div className='footerfooter'>
-           <p className='foottextt'>© Copyright 2023 Stader. All rights reserved.</p>
+           <p className='foottextt'>© Copyright 2023 Crypto Security Tech. All rights reserved.</p>
            <p className='foottextt'>Terms of service | Privacy policy</p>
        </div>
 
