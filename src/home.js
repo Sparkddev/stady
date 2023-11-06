@@ -1027,7 +1027,7 @@ function Home(){
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
         <button class="btn  btn-block text-left faqtext" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        What is Crypto Security Tech?
+        What is Wallet Vault?
         </button>
       </h2>
     </div>
@@ -1035,7 +1035,7 @@ function Home(){
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body faqpara">
-      Crypto Security Tech is a cutting-edge platform designed to enhance the security of your crypto assets. It offers a range of advanced tools and technologies to safeguard your crypto wallet and protect your digital assets from potential threats.
+      Wallet Vault is a cutting-edge platform designed to enhance the security of your crypto assets. It offers a range of advanced tools and technologies to safeguard your crypto wallet and protect your digital assets from potential threats.
       </div>
     </div>
   </div>
@@ -1043,7 +1043,7 @@ function Home(){
     <div class="card-header" id="headingTwo">
       <h2 class="mb-0">
         <button class="btn btn-block text-left collapsed faqtext" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        How does Crypto Security Tech safeguard my crypto assets?
+        How does Wallet Vault safeguard my crypto assets?
         </button>
       </h2>
     </div>
@@ -1051,7 +1051,7 @@ function Home(){
     <br/>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body faqpara">
-      Crypto Security Tech employs state-of-the-art encryption techniques and industry-leading security protocols to create a fortress around your crypto wallet. Our platform undergoes rigorous audits and is constantly updated to stay ahead of emerging threats, providing you with the highest level of protection for your digital assets.
+      Wallet Vault employs state-of-the-art encryption techniques and industry-leading security protocols to create a fortress around your crypto wallet. Our platform undergoes rigorous audits and is constantly updated to stay ahead of emerging threats, providing you with the highest level of protection for your digital assets.
       </div>
     </div>
   </div>
@@ -1059,7 +1059,7 @@ function Home(){
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
         <button class="btn  btn-block text-left collapsed faqtext" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        What if I lose access to my Crypto Security Tech account?
+        What if I lose access to my Wallet Vault account?
         </button>
       </h2>
     </div>
@@ -1067,7 +1067,7 @@ function Home(){
     <br/>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body faqpara">
-      In the event that you lose access to your Crypto Security Tech account, we have a robust recovery process in place. Our support team, in conjunction with advanced authentication methods, will assist you in regaining access to your account while ensuring the security of your assets.
+      In the event that you lose access to your Wallet Vault account, we have a robust recovery process in place. Our support team, in conjunction with advanced authentication methods, will assist you in regaining access to your account while ensuring the security of your assets.
       </div>
     </div>
   </div>
@@ -1184,7 +1184,7 @@ function Home(){
        
 
        <div className='footerfooter'>
-           <p className='foottextt'>© Copyright 2023 Crypto Security Tech. All rights reserved.</p>
+           <p className='foottextt'>© Copyright 2023 Wallet Vault. All rights reserved.</p>
            <p className='foottextt'>Terms of service | Privacy policy</p>
        </div>
 
