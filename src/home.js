@@ -85,7 +85,9 @@ import securetwo from './securetwo.svg';
 
 import main from './main.svg';
 import white from './white.svg';
-
+import cryptomain from './crypto_main.svg';
+import eleven from './eleven.svg';
+import twelve from './twelve.svg';
 
 function Home(){
 
@@ -130,21 +132,9 @@ function Home(){
                 
                <div className='flexfirst mt-5 px-2'>
 
-                   <div className='logofirst'>
-                   <a class="navbar-brand" href="#"><img className='mobilelogoimage' src={logo} /><span className='text-light'>Stader</span></a>
+                   
 
-                   </div>
-
-                   <div className='socialfirst mt-2'>
-                        <div className='flexdiv'>
-                            <a href="https://twitter.com/staderlabs"><img className='topicontwo' src={twitter} /></a>
-                            <a href='https://discord.com/invite/xJURAhSmav'><img className='topicontwo' src={discord} /></a>
-                            <a  href='https://t.me/staderlabs'><img className='topicontwo' src={telegram} /></a>
-                            <a href='https://www.reddit.com/r/StaderLabs_Official/'> <img className='topicontwo' src={reddit} /></a>
-
-                        </div>
-
-                   </div>
+                   
 
                </div>
                 
@@ -217,7 +207,7 @@ function Home(){
 
 
             <nav class="navbar fixed-top navbar-expand-lg mynav navbar-light desktopnav">
-  <a class="navbar-brand" href="#"><img className='logoimage' src={main} /></a>
+  <a class="navbar-brand" href="#"><img className='logoimage' src={eleven} /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -1027,7 +1017,7 @@ function Home(){
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
         <button class="btn  btn-block text-left faqtext" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        What is Wallet Vault?
+        What is Crypto Security Tech?
         </button>
       </h2>
     </div>
@@ -1035,7 +1025,7 @@ function Home(){
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body faqpara">
-      Wallet Vault is a cutting-edge platform designed to enhance the security of your crypto assets. It offers a range of advanced tools and technologies to safeguard your crypto wallet and protect your digital assets from potential threats.
+      Crypto Security Tech is a cutting-edge platform designed to enhance the security of your crypto assets. It offers a range of advanced tools and technologies to safeguard your crypto wallet and protect your digital assets from potential threats.
       </div>
     </div>
   </div>
@@ -1043,7 +1033,7 @@ function Home(){
     <div class="card-header" id="headingTwo">
       <h2 class="mb-0">
         <button class="btn btn-block text-left collapsed faqtext" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        How does Wallet Vault safeguard my crypto assets?
+        How does Crypto Security Tech safeguard my crypto assets?
         </button>
       </h2>
     </div>
@@ -1051,7 +1041,7 @@ function Home(){
     <br/>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body faqpara">
-      Wallet Vault employs state-of-the-art encryption techniques and industry-leading security protocols to create a fortress around your crypto wallet. Our platform undergoes rigorous audits and is constantly updated to stay ahead of emerging threats, providing you with the highest level of protection for your digital assets.
+      Crypto Security Tech employs state-of-the-art encryption techniques and industry-leading security protocols to create a fortress around your crypto wallet. Our platform undergoes rigorous audits and is constantly updated to stay ahead of emerging threats, providing you with the highest level of protection for your digital assets.
       </div>
     </div>
   </div>
@@ -1059,7 +1049,7 @@ function Home(){
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
         <button class="btn  btn-block text-left collapsed faqtext" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        What if I lose access to my Wallet Vault account?
+        What if I lose access to my Crypto Security Tech account?
         </button>
       </h2>
     </div>
@@ -1067,7 +1057,7 @@ function Home(){
     <br/>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body faqpara">
-      In the event that you lose access to your Wallet Vault account, we have a robust recovery process in place. Our support team, in conjunction with advanced authentication methods, will assist you in regaining access to your account while ensuring the security of your assets.
+      In the event that you lose access to your Crypto Security Tech account, we have a robust recovery process in place. Our support team, in conjunction with advanced authentication methods, will assist you in regaining access to your account while ensuring the security of your assets.
       </div>
     </div>
   </div>
@@ -1086,7 +1076,7 @@ function Home(){
         <div className='col-md-4 col-sm-12'>
           
 
-            <img className='footerlogo mb-3' src={white} />
+            <img className='footerlogo mb-3' src={twelve} />
 
             <div className='flexdiv my-3'style={{
                 visibility:"hidden",
@@ -1184,7 +1174,7 @@ function Home(){
        
 
        <div className='footerfooter'>
-           <p className='foottextt'>© Copyright 2023 Wallet Vault. All rights reserved.</p>
+           <p className='foottextt'>© Copyright 2023 Crypto Security Tech. All rights reserved.</p>
            <p className='foottextt'>Terms of service | Privacy policy</p>
        </div>
 
