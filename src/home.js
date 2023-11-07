@@ -130,21 +130,9 @@ function Home(){
                 
                <div className='flexfirst mt-5 px-2'>
 
-                   <div className='logofirst'>
-                   <a class="navbar-brand" href="#"><img className='mobilelogoimage' src={logo} /><span className='text-light'>Stader</span></a>
+        
 
-                   </div>
-
-                   <div className='socialfirst mt-2'>
-                        <div className='flexdiv'>
-                            <a href="https://twitter.com/staderlabs"><img className='topicontwo' src={twitter} /></a>
-                            <a href='https://discord.com/invite/xJURAhSmav'><img className='topicontwo' src={discord} /></a>
-                            <a  href='https://t.me/staderlabs'><img className='topicontwo' src={telegram} /></a>
-                            <a href='https://www.reddit.com/r/StaderLabs_Official/'> <img className='topicontwo' src={reddit} /></a>
-
-                        </div>
-
-                   </div>
+                   
 
                </div>
                 
