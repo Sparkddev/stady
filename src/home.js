@@ -85,6 +85,8 @@ import securetwo from './securetwo.svg';
 
 import main from './main.svg';
 import white from './white.svg';
+import yellowlogo from './yellowlogo.svg';
+import yellowtwo from './yellowtwo.svg';
 
 
 function Home(){
@@ -121,7 +123,7 @@ function Home(){
             {/* nav */}
 
             <nav className='mobilenav py-2 px-4 fixed-top'>
-                <img onClick={toggleMenu} className='hamb' src={hamburger} />  <a class="navbar-brand" href="#"><img className='mobilelogoimage' src={main} /></a>
+                <img onClick={toggleMenu} className='hamb' src={hamburger} />  <a class="navbar-brand" href="#"><img className='mobilelogoimage' src={yellowlogo} /></a>
 
             </nav>
 
@@ -205,7 +207,7 @@ function Home(){
 
 
             <nav class="navbar fixed-top navbar-expand-lg mynav navbar-light desktopnav">
-  <a class="navbar-brand" href="#"><img className='logoimage' src={main} /></a>
+  <a class="navbar-brand" href="#"><img className='logoimage' src={yellowlogo} /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -478,7 +480,7 @@ function Home(){
     <section className='herosection'>
 
         <div className='col-md-6'>
-            <h1 className='herohead'>Empowering Security  <br/> maximize rewards</h1>
+            <h1 className='herohead'>Empowering <span className='yellowspan'>Security</span>  <br/> <span className='yellowspan'>maximize </span> rewards</h1>
             <p className='heropara'>Start Safeguarding crypto assets today.</p>
 
             <div className='boxflex'>
@@ -623,11 +625,11 @@ function Home(){
 
     <section className='support'>
 
-        <h2 className='supportheading'>Top security for your crypto</h2>
+        <h2 className='supportheading'>Top <span className='yellowspan'>security </span> for your <span className='yellowspan'>crypto </span> assets</h2>
         <p className='heropara text-center'>Secure your access with by Safeguarding  Wallet for peace of mind.</p>
         <div className='text-center mt-2 py-4'>
 
-            <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnect'>Safeguard Wallet</Link>
+            <Link to={'/wallets'} className='btn text-dark px-4 py-2 font-weight-700 myconnect'>Safeguard Wallet</Link>
 
          
 
@@ -736,7 +738,7 @@ function Home(){
 
           <div className='col-md-4 coincontent'>
           <div className='spancontent'>
-             <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnecttwo'>Safeguard Wallet</Link>
+             <Link to={'/wallets'} className='btn text-dark px-4 py-2 font-weight-700 myconnecttwo'>Safeguard Wallet</Link>
 
 
               </div>
@@ -1074,7 +1076,7 @@ function Home(){
         <div className='col-md-4 col-sm-12'>
           
 
-            <img className='footerlogo mb-3' src={white} />
+            <img className='footerlogo mb-3' src={yellowtwo} />
 
             <div className='flexdiv my-3'style={{
                 visibility:"hidden",

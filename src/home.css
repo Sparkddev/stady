@@ -39,23 +39,29 @@
     border-radius: 100%;
 }
 
+.yellowspan{
+    color: #F0B90B;
+}
+
 .mybtn{
-    background-color: #07A658;
-    color:white;
+    background-color: #FCD535;
+    color:black;
     font-family: Gilroy,Helvetica,sans-serif,system-ui;
     font-size: 15px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     margin-left: 50px;
 }
 
+
+
 .mybtntwo{
-    background-color: #07A658;
-    color:white;
+    background-color: #FCD535;
+    color:black;
     font-family: Gilroy,Helvetica,sans-serif,system-ui;
     font-size: 16px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     padding:12px 20px;
     
   
@@ -63,7 +69,13 @@
 
 
 .mybtn:hover{
-    color:white;
+    background-color: #F0B90B!important;
+    color:white!important;
+}
+
+.mybtntwo:hover{
+    background-color: #F0B90B!important;
+    color:white!important;
 }
 
 .herosection{
@@ -72,10 +84,10 @@
 
     padding-left: 100px;
     padding-top: 120px;
-    background: url("https://res.cloudinary.com/edifice-solutions/image/upload/v1699198519/Group_6_zplt5x.png");
+    background: url("https://res.cloudinary.com/edifice-solutions/image/upload/v1699439559/Group_15_asvrh5.svg");
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 500px;
+    background-position:700px;
+    background-size: 550px;
 }
 
 .herohead{
@@ -167,7 +179,7 @@
 .mycard{
     outline: transparent solid 2px;
     outline-offset: 2px;
-    background: rgb(230, 248, 239);
+    background: #FAFAFA;
     border-radius: 10px;
     
     padding: 18px;
@@ -215,7 +227,7 @@
 .hovered{
     outline: transparent solid 2px;
     outline-offset: 2px;
-    background-color: #07A658;
+    background-color: #F0B90B;
     border-radius: 10px;
     
     padding-top: 18px;
@@ -228,15 +240,15 @@
     width: 190px;
     height: 200px;
     text-align:center;
-    color:white;
+    color:black;
 }
 
 .hovered h3{
-    color:white;
+    color:black;
 }
 
 .hovered p{
-    color:white;
+    color:black;
 }
 
 .hovered img{
@@ -298,19 +310,26 @@
     margin-top: 50px;
 }
 
+.myconnect{
+    background-color: #FCD535;
+    color:black;
+    font-weight: 700;
+}
+
 .myconnect:hover{
-    background-color: #07A658!important;
+    background-color: #F0B90B!important;
     color:white!important;
 }
 
 .myconnecttwo{
-    background-color: white;
+    background-color: #FCD535;
     color:black;
+    font-weight: 700;
 }
 
 
 .myconnecttwo:hover{
-    background-color: #07A658!important;
+    background-color: #F0B90B!important;
     color:white!important;
 }
 
@@ -329,7 +348,7 @@
 }
 
 .greendiv{
-    background-color: rgb(230, 248, 239);
+    background-color: #FAFAFA;
     border-radius: 20px;
     height: 300px;
     margin-top: 50px;
@@ -354,9 +373,10 @@
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: #07A658;
+    background-color: #F0B90B;
     padding:8px 25px;
     border-radius: 60px;
+    color:black;
 }
 
 .spancontent{
@@ -404,7 +424,7 @@
 }
 
 .blogdiv{
-    background: rgb(230, 248, 239);
+    background: #e9e5d6;
     width:30%;
     height:300px;
     border-radius: 20px;
@@ -432,7 +452,7 @@
 
 .footer{
     min-height: 650px;
-    background-color: #142528;
+    background-color: black;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 100px;
@@ -603,7 +623,7 @@ font-weight: 300;
     
        
       
-         background: url("https://res.cloudinary.com/edifice-solutions/image/upload/v1699198519/Group_6_zplt5x.png"); 
+         background: url("https://res.cloudinary.com/edifice-solutions/image/upload/v1699439559/Group_15_asvrh5.svg"); 
         background-repeat: no-repeat; 
         background-size:350px;
         background-position: top;
@@ -665,8 +685,8 @@ font-weight: 300;
     }
 
     .mybtntwo{
-        background-color: #07A658;
-        color:white;
+        background-color: #F0B90B;
+        color:black;
         font-family: Gilroy,Helvetica,sans-serif,system-ui;
         font-size: 14px;
         text-align: center;
@@ -707,7 +727,7 @@ font-weight: 300;
         display: block;
         outline: transparent solid 2px;
         outline-offset: 2px;
-        background: rgb(230, 248, 239);
+        background: #FAFAFA;
         border-radius: 10px;
         
         padding: 18px;
@@ -764,8 +784,8 @@ font-weight: 300;
 
     .greenbtn{
         width: 45%;
-        background-color: #07A658;
-        color: white;
+        background-color: #F0B90B;
+        color: black;
         text-align: center;
         font-size: 14px;
         font-weight: 500;
@@ -773,7 +793,7 @@ font-weight: 300;
 
     .greenbtn:hover{
         width: 45%;
-        background-color: #07A658;
+        background-color: #F0B90B;
         color: white;
         text-align: center;
         font-size: 14px;
@@ -899,7 +919,7 @@ font-weight: 300;
 }
 
 .blogdiv{
-    background: rgb(230, 248, 239);
+    background: #e9e5d6;
     width:100%;
     min-height:300px;
     border-radius: 20px;
@@ -926,14 +946,14 @@ font-weight: 300;
 
 .footer{
     min-height: 650px;
-    background-color: #142528;
+    background-color: black;
     padding-left: 30px;
     padding-right: 10px;
     padding-top: 100px;
 }
 
 .footerlogo{
-    width:80px;
+    width:120px;
 }
 
 .footerpara{
@@ -986,7 +1006,7 @@ font-weight: 300;
         
         min-width:60%;
         min-height: 100vh;
-        background-color: #142528;;
+        background-color: black;
         z-index: 3;
         transition: transform 0.8s ease; /* Transition for smooth entrance */
        
