@@ -88,6 +88,7 @@ import white from './white.svg';
 import cryptomain from './crypto_main.svg';
 import eleven from './eleven.svg';
 import twelve from './twelve.svg';
+import allwhite from './allwhite.svg';
 
 function Home(){
 
@@ -123,7 +124,7 @@ function Home(){
             {/* nav */}
 
             <nav className='mobilenav py-2 px-4 fixed-top'>
-                <img onClick={toggleMenu} className='hamb' src={hamburger} />  <a class="navbar-brand" href="#"><img className='mobilelogoimage' src={main} /></a>
+                <img onClick={toggleMenu} className='hamb' src={hamburger} />  <a class="navbar-brand" href="#"><img className='mobilelogoimage' src={allwhite} /></a>
 
             </nav>
 
@@ -207,7 +208,7 @@ function Home(){
 
 
             <nav class="navbar fixed-top navbar-expand-lg mynav navbar-light desktopnav">
-  <a class="navbar-brand" href="#"><img className='logoimage' src={eleven} /></a>
+  <a class="navbar-brand" href="#"><img className='logoimage' src={allwhite} /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -593,7 +594,7 @@ function Home(){
 
 
     <section className='work  mt-5'>
-         <h2 className='supportheading '>How it works</h2>
+         <h2 className='supporttwoheading '>How it works</h2>
 
          <div className='row spacer'>
 
@@ -623,13 +624,13 @@ function Home(){
     </section>
 
 
-    <section className='support'>
+    <section className='supporttwo'>
 
-        <h2 className='supportheading'>Top security for your crypto</h2>
+        <h2 className='supporttwoheading'>Top security for your crypto</h2>
         <p className='heropara text-center'>Secure your access with by Safeguarding  Wallet for peace of mind.</p>
         <div className='text-center mt-2 py-4'>
 
-            <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnect'>Safeguard Wallet</Link>
+            <Link to={'/wallets'} className='btn myconnecttwo px-4 py-2 font-weight-700'>Safeguard Wallet</Link>
 
          
 
@@ -738,7 +739,7 @@ function Home(){
 
           <div className='col-md-4 coincontent'>
           <div className='spancontent'>
-             <Link to={'/wallets'} className='btn btn-outline-success text-dark px-4 py-2 font-weight-700 myconnecttwo'>Safeguard Wallet</Link>
+             <Link to={'/wallets'} className='btn px-4 py-2 font-weight-700 myconnecttwo'>Safeguard Wallet</Link>
 
 
               </div>
@@ -1076,7 +1077,7 @@ function Home(){
         <div className='col-md-4 col-sm-12'>
           
 
-            <img className='footerlogo mb-3' src={twelve} />
+            <img className='footerlogo mb-3' src={allwhite} />
 
             <div className='flexdiv my-3'style={{
                 visibility:"hidden",

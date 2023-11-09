@@ -1,7 +1,7 @@
 .mynav{
     padding-right: 100px;
     padding-left: 100px;
-    background-color: white;
+    background-color: #061121;
 }
 
 .mobilenav{
@@ -18,12 +18,18 @@
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color: #142528;
+    color: #F4F4F4;
     font-size: 15px;
 
     font-weight: 500;
     letter-spacing: 0.5;
 }
+
+.nav-item:hover{
+    color: #F4F4F4;
+}
+
+
 
 .flexdiv{
     display:flex;
@@ -40,17 +46,19 @@
 }
 
 .mybtn{
-    background-color: #07A658;
+    background-color: none;
     color:white;
     font-family: Gilroy,Helvetica,sans-serif,system-ui;
     font-size: 15px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     margin-left: 50px;
+    border:1.5px solid #1199FA;
+    border-radius: 10px;
 }
 
 .mybtntwo{
-    background-color: #07A658;
+    background-color: #1199FA;
     color:white;
     font-family: Gilroy,Helvetica,sans-serif,system-ui;
     font-size: 16px;
@@ -68,14 +76,14 @@
 
 .herosection{
     min-height:600px;
-    background-color: white;
+    background-color: #00254F;
 
     padding-left: 100px;
     padding-top: 120px;
-    background: url("https://res.cloudinary.com/edifice-solutions/image/upload/v1699198519/Group_6_zplt5x.png");
+    background-image: url("https://res.cloudinary.com/edifice-solutions/image/upload/v1699446542/Group_17_dyjbcx.svg");
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 500px;
+    background-position: 630px;
+    background-size: 600px;
 }
 
 .herohead{
@@ -83,7 +91,7 @@
     line-height: 140%;
     font-size: 50px;
     max-width: 550px;
-    color: #142528;
+    color: white;
      font-family: Gilroy,Helvetica,sans-serif,system-ui;
   
 }
@@ -92,7 +100,7 @@
     font-size: 13px;
     line-height: 150%;
     font-weight: 500;
-    color: #3F6870;
+    color: white;
     margin-top: 0.85rem;
 }
 
@@ -111,7 +119,7 @@
 }
 
 .divider{
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #1199FA;
     height: 100%;
     
 }
@@ -120,7 +128,7 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 18px;
-    color: #3F6870;
+    color: white;
     text-transform: uppercase;
 }
 
@@ -128,7 +136,7 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 20px;
-    color: black;
+    color: white;
     font-family: Gilroy,Helvetica,sans-serif,system-ui;
     
 }
@@ -136,10 +144,11 @@
 
 .support{
     min-height:600px;
-    background-color: white;
+    background-color: #061121;
 
     
     padding-top: 120px;
+    padding-bottom: 50px;
     
 }
 
@@ -148,7 +157,17 @@
    
     font-size: 35px;
     text-align: center;
-    color: #142528;
+    color: white;
+     font-family: Gilroy,Helvetica,sans-serif,system-ui;
+     text-align: center;
+}
+
+.supporttwoheading{
+    font-weight: 600;
+   
+    font-size: 35px;
+    text-align: center;
+    color: #00254F;
      font-family: Gilroy,Helvetica,sans-serif,system-ui;
      text-align: center;
 }
@@ -167,7 +186,7 @@
 .mycard{
     outline: transparent solid 2px;
     outline-offset: 2px;
-    background: rgb(230, 248, 239);
+    background: white;
     border-radius: 10px;
     
     padding: 18px;
@@ -215,7 +234,7 @@
 .hovered{
     outline: transparent solid 2px;
     outline-offset: 2px;
-    background-color: #07A658;
+    background-color: #00254F;
     border-radius: 10px;
     
     padding-top: 18px;
@@ -275,7 +294,7 @@
     background-color: white;
 
     
-    padding-top: 120px;
+    padding-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -304,13 +323,18 @@
 }
 
 .myconnecttwo{
-    background-color: white;
-    color:black;
+    background-color: #1199FA;
+    color:white;
+    font-family: Gilroy,Helvetica,sans-serif,system-ui;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    padding:12px 20px;
 }
 
 
 .myconnecttwo:hover{
-    background-color: #07A658!important;
+  
     color:white!important;
 }
 
@@ -321,7 +345,9 @@
 
 .partners {
     min-height:500px;
-    background-color: white;
+    background-color: #061121;
+
+    padding-top: 50px;
 
     padding-left: 100px;
     padding-right: 100px;
@@ -329,7 +355,7 @@
 }
 
 .greendiv{
-    background-color: rgb(230, 248, 239);
+    background-color: white;
     border-radius: 20px;
     height: 300px;
     margin-top: 50px;
@@ -354,7 +380,7 @@
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: #07A658;
+    background-color: #00254F;
     padding:8px 25px;
     border-radius: 60px;
 }
@@ -404,7 +430,7 @@
 }
 
 .blogdiv{
-    background: rgb(230, 248, 239);
+    background: rgb(230, 240, 248);
     width:30%;
     height:300px;
     border-radius: 20px;
@@ -432,7 +458,7 @@
 
 .footer{
     min-height: 650px;
-    background-color: #142528;
+    background-color: #061121;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 100px;
@@ -592,7 +618,7 @@ font-weight: 300;
 
     .herosection{
         min-height:650px;
-        background-color: white;
+        background-color: #00254F;
 
       
     
@@ -603,9 +629,9 @@ font-weight: 300;
     
        
       
-         background: url("https://res.cloudinary.com/edifice-solutions/image/upload/v1699198519/Group_6_zplt5x.png"); 
+         background-image: url("https://res.cloudinary.com/edifice-solutions/image/upload/v1699446542/Group_17_dyjbcx.svg"); 
         background-repeat: no-repeat; 
-        background-size:350px;
+        background-size:430px;
         background-position: top;
         
     }
@@ -615,7 +641,7 @@ font-weight: 300;
         
         font-size: 30px;
         width: 100%;
-        color: #142528;
+        color: white;
          font-family: Gilroy,Helvetica,sans-serif,system-ui;
          text-align: center;
       
@@ -625,7 +651,7 @@ font-weight: 300;
         font-size: 13px;
         line-height: 150%;
         font-weight: 500;
-        color: #3F6870;
+        color: white;
         margin-top: 0.85rem;
         text-align: center;
     } 
@@ -635,7 +661,7 @@ font-weight: 300;
         font-size: 10px;
         line-height: 150%;
         font-weight: 500;
-        color: #3F6870;
+        color: white;
         margin-top: 0.85rem;
     }
     
@@ -651,7 +677,7 @@ font-weight: 300;
         font-size: 10px;
         font-weight: 700;
         line-height: 18px;
-        color: #3F6870;
+        color: white;
         text-transform: uppercase;
     }
     
@@ -659,13 +685,13 @@ font-weight: 300;
         font-size: 15px;
         font-weight: 400;
         line-height: 20px;
-        color: black;
+        color: white;
         font-family: Gilroy,Helvetica,sans-serif,system-ui;
         
     }
 
     .mybtntwo{
-        background-color: #07A658;
+        background-color: #1199FA;
         color:white;
         font-family: Gilroy,Helvetica,sans-serif,system-ui;
         font-size: 14px;
@@ -682,7 +708,7 @@ font-weight: 300;
        
         font-size: 20px;
         text-align: center;
-        color: #142528;
+        color: white;
          font-family: Gilroy,Helvetica,sans-serif,system-ui;
          text-align: center;
     }
@@ -707,7 +733,7 @@ font-weight: 300;
         display: block;
         outline: transparent solid 2px;
         outline-offset: 2px;
-        background: rgb(230, 248, 239);
+        background: rgb(230, 240, 248);
         border-radius: 10px;
         
         padding: 18px;
@@ -764,7 +790,7 @@ font-weight: 300;
 
     .greenbtn{
         width: 45%;
-        background-color: #07A658;
+        background-color: #1199FA;
         color: white;
         text-align: center;
         font-size: 14px;
@@ -773,7 +799,7 @@ font-weight: 300;
 
     .greenbtn:hover{
         width: 45%;
-        background-color: #07A658;
+        background-color: #1199FA;
         color: white;
         text-align: center;
         font-size: 14px;
@@ -815,7 +841,7 @@ font-weight: 300;
 
     .support{
         min-height:600px;
-        background-color: white;
+        background-color: #061121;
     
         
         padding-top: 70px;
@@ -830,15 +856,16 @@ font-weight: 300;
 
 .partners {
     min-height:800px;
-    background-color: white;
+    background-color: #061121;
 
     padding-left: 10px;
     padding-right: 10px;
     margin:0px;
+    padding-bottom: 70px;
 }
 
 .greendiv{
-    background-color: rgb(230, 248, 239);
+    background-color: white;
     border-radius: 20px;
     min-height: 730px;
     margin-top: 50px;
@@ -899,11 +926,16 @@ font-weight: 300;
 }
 
 .blogdiv{
-    background: rgb(230, 248, 239);
+    background: rgb(230, 240, 248);
     width:100%;
     min-height:300px;
     border-radius: 20px;
     margin-top: 30px;
+
+}
+
+.blogdiv p{
+    color:black;
 
 }
 
@@ -926,14 +958,14 @@ font-weight: 300;
 
 .footer{
     min-height: 650px;
-    background-color: #142528;
+    background-color: #061121;
     padding-left: 30px;
     padding-right: 10px;
     padding-top: 100px;
 }
 
 .footerlogo{
-    width:80px;
+    width:120px;
 }
 
 .footerpara{
@@ -967,7 +999,7 @@ font-weight: 300;
 
 .mobilenav{
     display: block;
-    background-color: white;
+    background-color:#061121;
     
 }
 
@@ -986,7 +1018,7 @@ font-weight: 300;
         
         min-width:60%;
         min-height: 100vh;
-        background-color: #142528;;
+        background-color: #061121;
         z-index: 3;
         transition: transform 0.8s ease; /* Transition for smooth entrance */
        
