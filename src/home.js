@@ -596,7 +596,7 @@ function Home(){
 
 
     <section className='work  mt-5'>
-         <h2 className='supportheading '>How Stader works</h2>
+         <h2 className='supportheading '>How Stader works with your wallet</h2>
 
          <div className='row spacer'>
 
@@ -616,7 +616,7 @@ function Home(){
 
              <div className='col-md-4 workcontent text-center'>
                  <img className='workimage' src={defi} />
-                 <h4 className='workhead'>Participate in DeFi</h4>
+                 <h4 className='workhead'>Participate in DeFi Pulling</h4>
                  <p className='workpara'>Use liquid tokens across 40+ DeFi protocols</p>
 
              </div>
